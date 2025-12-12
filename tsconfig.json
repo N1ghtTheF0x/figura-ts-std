@@ -1,0 +1,21 @@
+{
+    "include": ["source"],
+    "compilerOptions": {
+        "rootDir": "source",
+        "target": "ESNext",
+        "lib": ["ESNext"],
+        "strict": true,
+        "types": ["figura-ts"],
+        "noImplicitAny": true,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "outDir": "std",
+        "declaration": true
+    },
+    "tstl": {
+        "buildMode": "library",
+        "luaTarget": "5.2",
+        "luaLibImport": "require-minimal"
+    }
+}

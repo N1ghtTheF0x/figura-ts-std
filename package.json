@@ -1,0 +1,39 @@
+{
+  "name": "figura-ts-std",
+  "version": "0.0.1",
+  "description": "A standard library for figura-ts",
+  "files": [
+    "std"
+  ],
+  "keywords": [
+    "tstl",
+    "typescript-to-lua",
+    "figura-ts",
+    "figura",
+    "minecraft",
+    "minecraft",
+    "mod",
+    "lua"
+  ],
+  "homepage": "https://github.com/N1ghtTheF0x/figura-ts-std#readme",
+  "bugs": {
+    "url": "https://github.com/N1ghtTheF0x/figura-ts-std/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N1ghtTheF0x/figura-ts-std.git"
+  },
+  "license": "MIT",
+  "author": "N1ghtTheF0x",
+  "main": "std/index.lua",
+  "scripts": {
+    "clean": "node clean.mjs",
+    "prebuild": "pnpm clean",
+    "build": "tstl"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "figura-ts": "latest",
+    "typescript-to-lua": "latest"
+  }
+}
