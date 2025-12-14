@@ -1,3 +1,4 @@
+import { hostDebug } from "./console"
 import { registerHostOnlyEvent } from "./event"
 
 const NETWORK_PING_NAME = "figura-ts-std-network"
@@ -23,13 +24,13 @@ function __register_local_tick__(this: void): void
 export function Syncronize<V>(this: void)
 {
     __register_local_tick__()
-    return function(target: any,context: ClassFieldDecoratorContext)
+    return function(this: any,target: any,context: ClassFieldDecoratorContext)
     {
         const pingName = `${NETWORK_PING_NAME}-${__pings++}`
         pings[pingName]
-        return function(initialValue: V): V
+        hostDebug(this,target,context)
+        return (initialValue: V): V =>
         {
-            
             return initialValue
         }
     }
